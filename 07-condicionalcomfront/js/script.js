@@ -5,7 +5,7 @@ document.getElementById("btnVerificar").addEventListener("click", verificar);
 function verificar(){
     const input = document.getElementById("numero").value;
     const resultado = document.getElementById("resultado");
-
+ 
     const numero = Number(input);
 
     if(numero > 10) {
