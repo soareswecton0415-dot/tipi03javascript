@@ -89,3 +89,36 @@ console.log(upper);
 const fraseB = "QUE LEGAL!"
 const lower = fraseB.toLowerCase();
 console.log(lower);
+
+// array dinâmico
+let frutasD = [];
+frutasD.push("Maça");
+frutasD.push("Uva");
+frutasD.push("Manga");
+
+for(let i = 0; i < frutasD.length; i++){
+    console.log("indice" + i + ": " + frutasD[i]);
+}
+
+// array bidimensional (Matriz)
+let matriz = [
+    [1, 2, 3],
+    [4, 5, 6]
+];
+
+for(let b = 0; b < matriz.length; b++){
+    for(let c = 0; c < matriz[b].length; c++){
+        console.log("[" + b + "][" + c + "] =" + matriz[b][c]);
+    }
+}
+
+// array associativo (Object)
+let usuario = {
+    nome: "Ana",
+    idade: 18,
+    cidade: "São Paulo"
+};
+
+for(let chave in usuario) {
+    console.log(chave + ": " + usuario[chave]);
+}
