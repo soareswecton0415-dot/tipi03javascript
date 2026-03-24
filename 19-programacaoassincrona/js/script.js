@@ -1,0 +1,30 @@
+// setTimeOut
+function exibirMensagem(){
+    console.log('A mensagem foi exibida após 6 segundos.');
+}
+
+setTimeout(exibirMensagem, 6000);
+
+// setInterval
+/*
+function exibirMensagem (){
+    console.log('A mensagem foi exibida após 3 segundos');
+}
+
+setInterval(exibirMensagem, 3000);
+*/
+
+// async function
+async function esperar(segundos){
+    return new Promise ((resolve) => {
+        setTimeout(() => {
+            resolve(`Esperei ${segundos} segundos.`);
+        }, segundos * 1000);
+    });
+}
+
+async function executar(){
+    const resultado = await esperar(3);
+    console.log(resultado);
+}
+executar();
